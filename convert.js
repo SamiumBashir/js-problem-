@@ -29,3 +29,14 @@ function milesToKilo (miles){
 
 const finalkilo = milesToKilo(6);
 console.log(finalkilo);
+
+
+// convert 4
+
+function kiloToMiles (kilo){
+    const miles = kilo * 0.621371
+    return miles;
+}
+
+const finalMiles = kiloToMiles(7);
+console.log(finalMiles)
