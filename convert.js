@@ -1,0 +1,31 @@
+// convert inch to feet
+
+function InchToFeet (inch){
+    const feet = inch /12;
+    return feet
+}
+
+const omukHeight = InchToFeet(75);
+console.log(omukHeight);
+
+// conversition 2 
+
+function InchToFeet2 (inch){
+    const feetNumber = parseInt(inch / 12);
+    const inchNumber = inch % 12;
+    const result = feetNumber + ' ft ' + inchNumber + ' inch.';
+    return result;
+}
+
+const finalHeight = InchToFeet2(75);
+console.log(finalHeight);
+
+// convert 3
+
+function milesToKilo (miles){
+    const kilo = miles * 1.60934;
+    return kilo;
+}
+
+const finalkilo = milesToKilo(6);
+console.log(finalkilo);
