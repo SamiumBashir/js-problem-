@@ -13,7 +13,7 @@ function oddAvg (avgOfOdd){
     for(const number of newArry){
         sum = sum + number;
     };
-    
+    console.log(newArry.length);
     let finalSum = sum / newArry.length; // we are using .length instead of [i] cause , newArry is an Array.
     return finalSum;
 }
