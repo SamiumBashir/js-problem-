@@ -6,7 +6,7 @@ function InchToFeet (inch){
 }
 
 const omukHeight = InchToFeet(75);
-console.log(omukHeight);
+// console.log(omukHeight);
 
 // conversition 2 
 
@@ -18,7 +18,7 @@ function InchToFeet2 (inch){
 }
 
 const finalHeight = InchToFeet2(75);
-console.log(finalHeight);
+// console.log(finalHeight);
 
 // convert 3
 
@@ -28,7 +28,7 @@ function milesToKilo (miles){
 }
 
 const finalkilo = milesToKilo(6);
-console.log(finalkilo);
+// console.log(finalkilo);
 
 
 // convert 4
@@ -39,4 +39,22 @@ function kiloToMiles (kilo){
 }
 
 const finalMiles = kiloToMiles(7);
-console.log(finalMiles)
+// console.log(finalMiles)
+
+function daysToYear (days){
+    const yearFranction = days / 365;
+    const yearNumber = parseInt(yearFranction);
+    let daysNumber = days % 365;
+    let monthNumber = 0;
+        if(daysNumber >= 30){
+            monthNumber = parseInt(daysNumber / 30);
+            daysNumber = daysNumber % 30;
+        } else {
+            monthNumber = 0;
+        }
+    return finalAge = yearNumber + ' years ' + monthNumber + ' months ' + daysNumber +' days ';
+}
+
+
+let customerAge = daysToYear(90);
+console.log(customerAge);
