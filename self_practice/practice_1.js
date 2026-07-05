@@ -4,4 +4,20 @@ function celsiusToFer (celsius){
 }
 
 const feverInF = celsiusToFer(38);
-console.log(feverInF);
+// console.log(feverInF);
+
+let numbers = [5,6,11,12,98, 5];
+
+function matchNumber(number){
+    let matchArry = [];
+    for(const numbs of number){
+        if(numbs === 5){
+            matchArry.push(numbs);
+        }
+    }
+    return matchArry;
+}
+
+const checkNumbs = matchNumber(numbers);
+console.log(checkNumbs.length);
+
