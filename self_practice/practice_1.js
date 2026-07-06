@@ -32,4 +32,20 @@ function findNumbs(arryData){
 }
 
 const findNumber = findNumbs(numbers);
-console.log(findNumber.length)
+// console.log(findNumber.length)
+
+const str = 'floccinaucinihilipilification';
+
+function countVowel (vowels){
+    let arrVow = [];
+    const vowList = ['a', 'i', 'e', 'o', 'u']
+    for(let i = 0; i <= vowels.length; i++){
+        if(vowList.includes(vowels[i])){
+            arrVow++;
+        }
+    }
+    return arrVow;
+}
+
+const numbsOfVow = countVowel(str);
+console.log(numbsOfVow);
