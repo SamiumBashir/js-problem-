@@ -48,4 +48,21 @@ function countVowel (vowels){
 }
 
 const numbsOfVow = countVowel(str);
-console.log(numbsOfVow);
+// console.log(numbsOfVow);
+
+let sentence = 'I am learning Programming to become a programmer';
+
+function longWorld (word){
+    const words = sentence.split(' ');
+    let longWord = '';
+    
+    for(const word of words){
+        if(word.length > longWord.length){
+            longWord = word;
+        }
+    }
+    return longWord;
+}
+
+const findLongest = longWorld(sentence);
+console.log(findLongest);
