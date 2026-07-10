@@ -1,10 +1,10 @@
 let sentence = 'i am loving javascript';
 
-function changeUpCase (text){
+function changeUpCase(text) {
     let words = sentence.split(' ');
     let modifiedText = [];
 
-    for(const word of words){
+    for (const word of words) {
         let capitalizedWord = word[0].toUpperCase() + word.slice(1).toLowerCase();
         modifiedText.push(capitalizedWord);
     }
