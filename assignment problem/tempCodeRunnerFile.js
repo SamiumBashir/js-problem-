@@ -1,0 +1,1 @@
+right: 30, wrong: 30, skip: 40
