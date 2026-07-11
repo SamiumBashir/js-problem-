@@ -1,1 +1,1 @@
-equal
+let words = str.split(' ')
